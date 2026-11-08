@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Tipos de entrada especiales</title>
+</head>
+<body>
+ <h1>Tipos de entrada especiales</h1>
+ <h2>¿Para qué sirven?</h2>
+ <p>Estos tipos de input validan y muestran los campos de la forma más adecuada según el dato que se espera del usuario (correo, número, fecha, color...).</p>
+
+ <h2>Lista de tipos</h2>
+ <ul>
+  <li>password: oculta lo que se escribe.</li>
+  <li>email: comprueba que tenga formato de correo.</li>
+  <li>url: comprueba que sea una dirección web.</li>
+  <li>tel</: número de teléfono.</li>
+  <li>number: número (con <code>min</code>, <code>max</code> y <code>step</code>).</li>
+  <li>range: barra deslizante.</li>
+  <li>date: fecha.</li>
+  <li>time: hora.</li>
+  <li>datetime-local: fecha y hora.</li>
+  <li>month: mes.</li>
+  <li>week: semana del año.</li>
+  <li>color: selector de color.</li>
+  <li>file: para subir un archivo.</li>
+ </ul>
+
+ <h2>Ejemplo de código (resumido)</h2>
+ <h2>Formulario de demostración con todos los tipos</h2>
+ <form action="#" method="POST">
+  <p><label for="nom">Nombre:</label>
+   <input type="text" id="nom" name="nom" placeholder="Escribe tu nombre" required></p>
+  <p><label for="password">Contraseña:</label>
+   <input type="password" id="password" name="password" placeholder="Escribe tu contraseña" required></p>
+  <p><label for="email">Correo electrónico:</label>
+   <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico" required></p>
+  <p><label for="web">Sitio web:</label>
+   <input type="url" id="web" name="web" placeholder="Escribe la URL de tu sitio web"></p>
+  <p><label for="telefono">Teléfono:</label>
+   <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono"></p>
+  <p><label for="edad">Edad:</label>
+   <input type="number" id="edad" name="edad" min="0" max="100" step="1" placeholder="Escribe tu edad"></p>
+  <p><label for="satisfaccion">Nivel de satisfacción:</label>
+   <input type="range" id="satisfaccion" name="satisfaccion" min="1" max="10" step="1"></p>
+  <p><label for="nacimiento">Fecha de nacimiento:</label>
+   <input type="date" id="nacimiento" name="fecha-nacimiento"></p>
+  <p><label for="hora-reunion">Hora de la reunión:</label>
+   <input type="time" id="hora-reunion" name="hora-reunion"></p>
+  <p><label for="fecha-reunion">Fecha y hora de la reunión:</label>
+   <input type="datetime-local" id="fecha-reunion" name="fecha-reunion"></p>
+  <p><label for="mes">Mes preferido:</label>
+   <input type="month" id="mes" name="mes-preferido"></p>
+  <p><label for="semana">Semana del año:</label>
+   <input type="week" id="semana" name="semana-seleccionada"></p>
+  <p><label for="color">Color preferido:</label>
+   <input type="color" id="color" name="color-preferido"></p>
+  <p><label for="archivo">Subir un archivo:</label>
+   <input type="file" id="archivo" name="documento"></p>
+  <button type="submit">Enviar</button>
+ </form>
+
+ <p><a href="../../index.html">Volver al índice</a></p>
+</body>
+</html>
