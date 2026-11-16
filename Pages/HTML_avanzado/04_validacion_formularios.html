@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Validación de formularios</title>
+</head>
+<body>
+ <h1>Validación de formularios</h1>
+ <h2>Validación nativa con HTML5</h2>
+ <p>HTML5 incluye atributos y tipos de entrada que validan los formularios <strong>sin necesidad de JavaScript</strong>. El navegador comprueba los datos antes de enviarlos y muestra un aviso si algo no es correcto.</p>
+
+ <h2>Atributo required</h2>
+ <p>Marca un campo como obligatorio.</p>
+<p>
+ input type="text" name="nom" required placeholder="Escribe tu nombre"
+</p>
+
+ <h2>Atributo pattern</h2>
+<p>
+ input type="text" name="telefono" pattern="\d{9}" placeholder="Escribe tu teléfono"
+</p>
+
+ <h2>Otros atributos útiles</h2>
+ <ul>
+  <li>min y max: valor mínimo y máximo en campos numéricos o de fecha.</li>
+  <li>type="email" y type="url": validan automáticamente el formato.</li>
+ </ul>
+
+ <h2>Formulario de demostración</h2>
+ <p>Prueba a enviarlo vacío o con datos incorrectos:</p>
+ <form action="#" method="POST">
+  <p>
+   <label for="nom">Nombre (obligatorio):</label>
+   <input type="text" id="nom" name="nom" required placeholder="Escribe tu nombre">
+  </p>
+  <p>
+   <label for="telefono">Teléfono (9 dígitos):</label>
+   <input type="text" id="telefono" name="telefono" pattern="\d{9}" placeholder="Escribe tu teléfono">
+  </p>
+  <p>
+   <label for="edad">Edad (0 a 100):</label>
+   <input type="number" id="edad" name="edad" min="0" max="100">
+  </p>
+  <button type="submit">Enviar</button>
+ </form>
+
+ <h2>Buenas prácticas en formularios</h2>
+ <ul>
+  <li>Usar <code>&lt;label&gt;</code> para mejorar la accesibilidad.</li>
+  <li>Usar el tipo de entrada adecuado a cada dato.</li>
+  <li>Poner <code>required</code> en los campos obligatorios.</li>
+  <li>Añadir validación nativa con <code>pattern</code> y <code>min</code>/<code>max</code>.</li>
+  <li>Usar <code>placeholder</code> para dar pistas.</li>
+  <li>Agrupar los campos en bloques lógicos con <code>&lt;fieldset&gt;</code> y <code>&lt;legend&gt;</code>.</li>
+  <li>Dar información clara sobre los errores.</li>
+  <li>Usar <code>autocomplete</code> para mejorar la experiencia del usuario.</li>
+ </ul>
+
+ <h2>Ejemplo con fieldset y legend</h2>
+ <fieldset>
+  <legend>Información personal</legend>
+  <label for="nom2">Nombre:</label>
+  <input type="text" id="nom2" name="nom" required>
+ </fieldset>
+
+ <p><a href="../../index.html">Volver al índice</a></p>
+</body>
+</html>

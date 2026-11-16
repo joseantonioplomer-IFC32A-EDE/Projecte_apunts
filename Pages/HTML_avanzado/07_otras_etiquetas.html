@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Otras etiquetas: center, div, span, hr, template e iframe</title>
+</head>
+<body>
+ <h1>Otras etiquetas: center, div, span, hr, template e iframe</h1>
+ <p>En el índice del PDF este punto aparece como "Etiqueta". Agrupa las etiquetas que se explican en las diapositivas 22 a 27.</p>
+
+ <h2>1. Etiqueta center (obsoleta)</h2>
+ <p>Se usaba en versiones antiguas de HTML para centrar contenido. Está <strong>obsoleta en HTML5</strong> y no se debe usar. Hoy se centra con CSS.</p>
+
+<center>
+ <h2>Bienvenidos a mi sitio web</h2>
+</center>
+
+ <h2>2. Etiqueta div</h2>
+ <p>div (division) crea contenedores de <strong>bloque</strong>: ocupa todo el ancho disponible y empieza en una línea nueva. No tiene significado semántico; solo agrupa elementos y suele estilizarse con CSS.</p>
+ <div>
+  <h3>Sección 1</h3>
+  <p>Este es un párrafo dentro de un div.</p>
+ </div>
+ <p>Buena práctica: no abusar de div cuando existan etiquetas semánticas más adecuadas header, section, article ,footer.</p>
+
+ <h2>3. Etiqueta span</h2>
+ <p>span es una etiqueta <strong>en línea</strong> (inline): ocupa solo el espacio necesario. Tampoco es semántica; se usa para dar estilo a una parte pequeña de un texto.</p>
+
+ <p>Este es un <span>span</span>.</p>
+
+ <h2>4. Etiqueta hr</h2>
+ <p> hr dibuja una línea horizontal. En HTML5 tiene valor semántico: indica un cambio de tema dentro del documento. No hay que abusar de ella.</p>
+ <hr>
+ <h3>Historia de la compañía</h3>
+ <p>Nuestra empresa fue fundada en 1990...</p>
+ <hr>
+ <h3>Nuestros servicios</h3>
+ <p>Ofrecemos una amplia gama de servicios...</p>
+
+ <h2>5. Etiqueta template</h2>
+ <p>template define fragmentos de HTML reutilizables que <strong>no se muestran</strong> al cargar la página. Su contenido no se añade al documento hasta que se usa con JavaScript (clonándolo e insertándolo), por eso se usa en aplicaciones dinámicas.</p>
+ <p>Debajo hay un template, pero no se ve en la página:</p>
+ <template id="miPlantilla">
+  <div class="producto">
+   <h2>Nombre del producto</h2>
+   <p>Descripción del producto</p>
+  </div>
+ </template>
+
+ <h2>6. Etiqueta iframe</h2>
+ <p>iframe (inline frame) permite insertar una página dentro de otra: vídeos de YouTube, mapas de Google Maps, formularios externos, etc. Atributos habituales: width, height, src, allowfullscreen y sandbox (limita lo que puede hacer el contenido incrustado, para mayor seguridad).</p>
+
+ <p>Buenas prácticas: no abusar de los iframes (ralentizan la página), usar sandbox por seguridad, ajustar su tamaño a todas las pantallas y permitir pantalla completa en los vídeos.</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d393424.5517138742!2d2.5820038724810317!3d39.61303215319946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297b8766606c129%3A0xb7eb9bff02d2ecc0!2sMallorca!5e0!3m2!1ses!2ses!4v1794175755870!5m2!1ses!2ses" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts"></iframe>
+ <hr>
+ <p><a href="../../index.html">Volver al índice</a></p>
+</body>
+</html>

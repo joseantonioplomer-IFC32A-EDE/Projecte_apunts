@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Multimedia con HTML</title>
+</head>
+<body>
+ <h1>Multimedia con HTML</h1>
+ <h2>Multimedia en HTML5</h2>
+ <p>HTML5 permite integrar imágenes, vídeo y audio de forma nativa, <strong>sin plug-ins externos</strong> como Flash. Esto mejora la compatibilidad y el uso en distintos dispositivos, sobre todo en móviles.</p>
+
+ <h2>Imágenes</h2>
+ <p>Se usa img. Atributos principales: src (ruta),alt (texto alternativo para accesibilidad y SEO) y width height (tamaño).</p>
+
+ <img src="../../imagenes/Imagen_html.jpg" alt="Imagen html" width="100" height="100">
+
+ <h2>Vídeo: etiqueta video</h2>
+ <p>Atributos principales:</p>
+ <ul>
+  <li>src: ruta del archivo de vídeo.</li>
+  <li>controls: muestra los controles (play, pausa, volumen...).</li>
+  <li>autoplay: se reproduce solo al cargar la página.</li>
+  <li>loop: se repite en bucle.</li>
+  <li>muted: se reproduce sin sonido.</li>
+ </ul>
+
+ <p>(Para que se vea hace falta un archivo <code>video.mp4</code> en la misma carpeta; si no existe, se muestra el texto alternativo.)</p>
+ <video src="../../Imagenes/video.mp4" controls width="400" height="300">
+  Tu navegador no soporta el vídeo.
+ </video>
+
+ <h2>Audio: etiqueta audio</h2>
+ <p>Funciona de forma parecida y tiene los mismos atributos principales (<code>src</code>, <code>controls</code>, <code>autoplay</code>, <code>loop</code>, <code>muted</code>).</p>
+
+ <audio src="../../Imagenes/audio.mp3" controls>
+  Tu navegador no soporta el audio.
+ </audio>
+
+ <h2>Buenas prácticas</h2>
+ <ul>
+  <li>Ofrecer formatos compatibles con distintos navegadores (MP4, WebM, OGG).</li>
+  <li>Usar siempre <code>alt</code> en las imágenes.</li>
+  <li>No usar <code>autoplay</code> en audio y vídeo, porque puede molestar al usuario, sobre todo en móviles.</li>
+  <li>Controlar el tamaño de los archivos para evitar tiempos de carga largos.</li>
+ </ul>
+
+ <p><a href="../../index.html">Volver al índice</a></p>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Metadatos en HTML</title>
+</head>
+<body>
+ <h1>Metadatos en HTML</h1>
+ <h2>¿Qué son los metadatos?</h2>
+ <p>Son información que se coloca en el documento para describir sus características (autor, descripción, palabras clave, instrucciones para buscadores...). Se escriben dentro de head y <strong>no se muestran</strong> en la página, pero ayudan a navegadores, buscadores y aplicaciones a entender el contenido.</p>
+
+ <h2>Charset (juego de caracteres)</h2>
+ <p>Define los caracteres del documento. UTF-8 admite casi todos.</p>
+<p>
+ meta charset="UTF-8"
+</p>
+
+ <h2>Viewport (diseño responsive)</h2>
+ <p>Hace que la página se adapte bien a distintos tamaños de pantalla, sobre todo en móviles.</p>
+<p>
+ meta name="viewport" content="width=device-width, initial-scale=1.0"
+</p>
+
+ <h2>Descripción de la página</h2>
+ <p>Breve descripción que usan los buscadores en los resultados.</p>
+<p>
+ meta name="description" content="Este es un sitio web que ofrece información sobre HTML5."
+</p>
+
+ <h2>Palabras clave (keywords)</h2>
+ <p>Conjunto de palabras que describen la página. Hoy los buscadores las usan poco.</p>
+<p>
+ meta name="keywords" content="HTML5, desarrollo web, CSS, JavaScript"
+</p>
+
+ <h2>Autor</h2>
+<p>
+ meta name="author" content="Nombre del autor"
+</p>
+
+ <h2>Instrucciones para robots de búsqueda</h2>
+ <p>Indican a los buscadores cómo indexar y rastrear la página.</p>
+<p>
+ meta name="robots" content="index, follow"
+</p>
+
+ <h2>Open Graph (redes sociales)</h2>
+ <p>Permiten que las redes sociales muestren una vista previa personalizada al compartir un enlace.</p>
+<p>
+ meta property="og:title" content="Título de la página" 
+ meta property="og:description" content="Descripción de la página"
+ meta property="og:image" content="imagen.jpg" 
+ meta property="og:url" content="https://www.ejemplo.com"
+</p>
+
+ <h2>Aplicaciones móviles y favicon</h2>
+<p>
+ link rel="apple-touch-icon" href="icon.png"
+ link rel="icon" href="favicon.ico" type="image/x-icon"
+</p>
+ <p>El <strong>favicon</strong> no es un meta, pero es un metadato visual: el icono de la pestaña del navegador. apple-touch-icon es el icono al guardar la página en la pantalla de inicio de un móvil.</p>
+
+ <h2>Atributo lang</h2>
+ <p>Se pone en html para indicar el idioma de la página (o en otra etiqueta para marcar un idioma concreto dentro del contenido).</p>
+<p>
+ html lang="es"
+ ...
+ /html
+</p>
+
+ <h2>Buenas prácticas</h2>
+ <ul>
+  <li>Usar UTF-8 para que todos los caracteres especiales se vean bien.</li>
+  <li>Incluir una descripción relevante de la página.</li>
+  <li>Usar viewport para optimizar la página para móviles.</li>
+  <li>Incluir Open Graph si se quiere una vista previa atractiva en redes sociales.</li>
+  <li>Usar la etiqueta robots para controlar la indexación.</li>
+ </ul>
+
+ <hr>
+ <p><a href="../../index.html">Volver al índice</a></p>
+</body>
+</html>
